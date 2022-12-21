@@ -1,43 +1,47 @@
 # Project
 
-It's a small program with functions to calculate discrete Fourier transforms and inverse discrete fourier transform with different algorithms (DFT, FFT, IDFT, IFFT).
+This is a console program to calculate undirected graph degeneracy and then create a graph based on the values of the k-cores numbers.
 
-This project was made  for a 3rd year license study project.
+![](./imgReadme.jpg)
 
+This project was made for a 3rd year license study project.
 
 ### Features 
 
-- Before using functions you can import image, import a file Numpy (with extension .npy), or create matrix.
-- You can choose between 4 functions to applied :
-  - calcul of discrete Fourier transform with direct algorithm (DFT)
-  - calcul of inverse discrete Fourier transform with direct algorith m (IDFT)
-  - calcul of discrete Fourier transform with recursive algorithm (FFT)
-  - calcul of inverse discrete Fourier transform with recursive algorithm
-- After the function has been applied, my program create result image and some result file in different file format.
+- Import of graph from files, each line of these files must describe a link between 2 elements of the graph. You have data files like this in 'data' folder, and you can find more on some websites like [SNAP](http://snap.stanford.edu/data/index.html "") or [KONECT](http://konect.cc/ "").
+- Calculation and display of the degeneracy of the graphs, as well as the values of the number k-cores of each vertices.
+- Creation of a PostScript file describing the circular drawing of a graph with the vertices having the highest value for the k-core number in the center, and the vertices having the lowest values on the outside.
+- If the user's machine is equipped with the `ps2pdf` command, a pdf file is created with the PostScript file.
 
 # Built with 
 
-The project was made in python with 4 libraries :
-- PIL
-- cmath
-- numpy
-- time
+The project was made in C++.
 
-# Get project
-
-### Prerequisites
-
-
+# Get and use project
 
 ### Installation 
 
+1. Clone the repo. 
+```
+git clone https://github.com/LilianLeVrai/graph_degeneracy.git
+```
+2. Compile project. 
+```
+g++ project.cpp -o project
+```
+4. And run the executable. 
+```
+./project
+```
+
+
+# Documentation
+
+You can find some documentation (report, testing guide,...) about this project in the 'docs' folder. 
+This project being intended for a French professor, so this documentation and the comments of the code are in French and some file or folder names have changed. 
 
 
 # Contributors 
 
-- Lilian M.
-
-
-
-
-
+- [Lilian M.](https://github.com/LilianLeVrai "")
+- Pierre A.
