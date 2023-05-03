@@ -43,5 +43,5 @@ This project being intended for a French professor, so this documentation and th
 
 # Contributors 
 
-- [Lilian M.](https://github.com/LilianLeVrai "")
+- [Lilian M.](https://github.com/LilianManzano "")
 - Pierre A.
